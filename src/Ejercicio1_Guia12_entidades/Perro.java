@@ -12,9 +12,11 @@ public class Perro extends Animal {
     }
 
     String rojo = "\033[31m";
+    
     @Override
     public void alimentarse(){
-       System.out.println(rojo+"Soy un Perro y me alimento de " + alimento);
-    } 
+    System.out.println(rojo+"Soy un Perro y me alimento de " + alimento);
+    }
+    
 }
     
