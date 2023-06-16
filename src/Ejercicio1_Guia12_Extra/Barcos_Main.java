@@ -2,7 +2,10 @@
 package Ejercicio1_Guia12_Extra;
 
 import Ejercicio1_Guia12_Extra_entidades.Alquiler;
+import Ejercicio1_Guia12_Extra_entidades.Barco;
+import Ejercicio1_Guia12_Extra_entidades.BarcoMotor;
 import Ejercicio1_Guia12_Extra_entidades.Velero;
+import Ejercicio1_Guia12_Extra_entidades.Yate;
 import java.time.LocalDate;
 
 
@@ -30,10 +33,50 @@ public class Barcos_Main {
     
     public static void main(String[] args) {
        
-        Velero velero = new Velero("V123", 15.5, 2000, 3);
-        Alquiler alquiler = new Alquiler("Juan Perez", "12345678", LocalDate.of(2023, 6, 1),
-                LocalDate.of(2023, 6, 5), 1, velero);
-        double precioAlquiler = alquiler.calcularPrecioAlquiler();
-        System.out.println("Precio del alquiler: " + precioAlquiler);
+        
+        Barco barco = new Barco("X1234", 20.2, 2001);
+        Velero velero = new Velero("V1234", 15.5, 2000, 3);
+        BarcoMotor barcom = new BarcoMotor("Y1234", 25.5, 2010,500);
+        Yate yate = new Yate("Z1234", 35.3, 2015, 500,5);
+        
+             
+        System.out.println("Alquiler Barco");
+        System.out.println("--------------");
+        Alquiler alq = new Alquiler("Jose Gomez", "12345678", LocalDate.of(2023, 6, 15),
+                LocalDate.of(2023, 6, 20), 1, barco);
+        double precioAlquiler = alq.calcularPrecioAlquiler();
+        System.out.println("Precio Alquiler: " + precioAlquiler);
+        System.out.println("");
+        
+        System.out.println("Alquiler Velero");
+        System.out.println("---------------");
+        Alquiler alq1 = new Alquiler("Jose Garcia", "23456789", LocalDate.of(2023, 6, 16),
+                LocalDate.of(2023, 6, 24), 2, velero);
+        precioAlquiler = alq1.calcularPrecioAlquiler();
+        System.out.println("Precio Alquiler: " + precioAlquiler);
+        System.out.println("");
+        
+        System.out.println("Alquiler Barco Motor");
+        System.out.println("--------------------");
+        Alquiler alq2 = new Alquiler("Jose Guzman", "34567890", LocalDate.of(2023, 6, 16),
+                LocalDate.of(2023, 7, 30), 3, barcom);
+        precioAlquiler = alq2.calcularPrecioAlquiler();
+        System.out.println("Precio Alquiler: " + precioAlquiler);
+        System.out.println("");
+        
+        System.out.println("Alquiler Yate");
+        System.out.println("-------------");
+        Alquiler alq3 = new Alquiler("Jose Esteves", "45678901", LocalDate.of(2023, 6, 20),
+                LocalDate.of(2023, 7, 30), 4, yate);
+        precioAlquiler = alq3.calcularPrecioAlquiler();
+        System.out.println("Precio Alquiler: " + precioAlquiler);
+        System.out.println("");
+        
+
+        
+        
+        
+        
+        
     }
 }
