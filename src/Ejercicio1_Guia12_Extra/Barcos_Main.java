@@ -33,6 +33,10 @@ public class Barcos_Main {
     
     public static void main(String[] args) {
        
+        String magenta = "\033[35m";
+        String verde = "\033[32m";
+        String amarillo = "\033[33m";
+        String celeste = "\033[36m";
         
         Barco barco = new Barco("X1234", 20.2, 2001);
         Velero velero = new Velero("V1234", 15.5, 2000, 3);
@@ -45,7 +49,7 @@ public class Barcos_Main {
         Alquiler alq = new Alquiler("Jose Gomez", "12345678", LocalDate.of(2023, 6, 15),
                 LocalDate.of(2023, 6, 20), 1, barco);
         double precioAlquiler = alq.calcularPrecioAlquiler();
-        System.out.println("Precio Alquiler: " + precioAlquiler);
+        System.out.println(magenta+"Precio Alquiler: " + precioAlquiler);
         System.out.println("");
         
         System.out.println("Alquiler Velero");
@@ -53,7 +57,7 @@ public class Barcos_Main {
         Alquiler alq1 = new Alquiler("Jose Garcia", "23456789", LocalDate.of(2023, 6, 16),
                 LocalDate.of(2023, 6, 24), 2, velero);
         precioAlquiler = alq1.calcularPrecioAlquiler();
-        System.out.println("Precio Alquiler: " + precioAlquiler);
+        System.out.println(verde+"Precio Alquiler: " + precioAlquiler);
         System.out.println("");
         
         System.out.println("Alquiler Barco Motor");
@@ -61,7 +65,7 @@ public class Barcos_Main {
         Alquiler alq2 = new Alquiler("Jose Guzman", "34567890", LocalDate.of(2023, 6, 16),
                 LocalDate.of(2023, 7, 30), 3, barcom);
         precioAlquiler = alq2.calcularPrecioAlquiler();
-        System.out.println("Precio Alquiler: " + precioAlquiler);
+        System.out.println(amarillo+"Precio Alquiler: " + precioAlquiler);
         System.out.println("");
         
         System.out.println("Alquiler Yate");
@@ -69,7 +73,7 @@ public class Barcos_Main {
         Alquiler alq3 = new Alquiler("Jose Esteves", "45678901", LocalDate.of(2023, 6, 20),
                 LocalDate.of(2023, 7, 30), 4, yate);
         precioAlquiler = alq3.calcularPrecioAlquiler();
-        System.out.println("Precio Alquiler: " + precioAlquiler);
+        System.out.println(celeste+"Precio Alquiler: " + precioAlquiler);
         System.out.println("");
         
 
