@@ -17,15 +17,14 @@ public class Electrodomestico {
     protected char consumoEnergetico;
     protected double peso;
 
-       
     public Electrodomestico() {
         this.precio = 1000;
         this.color = "blanco";
         this.consumoEnergetico = 'F';
         this.peso = 0;
-                
-    }
-    
+    }   
+
+        
     public Electrodomestico(double precio, String color, char consumoEnergetico, double peso) {
         this.precio = precio;
         this.color = color;
@@ -68,7 +67,8 @@ public class Electrodomestico {
     String verde = "\033[32m";
     @Override
     public String toString() {
-        return verde+"Electrodomestico => " + "\nPrecio = " + precio + "\nColor = " + color + "\nConsumo Energetico = " + consumoEnergetico + "\nPeso=" + peso+"\n";
+        comprobarConsumoEnergetico(consumoEnergetico);
+        return verde+"Electrodomestico => " + "\nPrecio = " + precio + "\nColor = " + color + "\nConsumo Energetico = "+consumoEnergetico + "\nPeso=" + peso+"\n";
     }
     
     
@@ -83,6 +83,7 @@ public class Electrodomestico {
             consumoEnergetico = 'F';
 
         }
+        System.out.println("Consumo Energetico "+consumoEnergetico);
     }
     
     
@@ -120,6 +121,7 @@ public class Electrodomestico {
         comprobarConsumoEnergetico(consumoEnergetico);
         System.out.println("Ingrese el peso: ");
         peso = sc.nextDouble();
+        System.out.println("Electrodomestico => " + "\nPrecio = " + precio + "\nColor = " + color + "\nConsumo Energetico = " + consumoEnergetico + "\nPeso=" + peso+"\n");
     }
     
     

@@ -1,6 +1,7 @@
 
 package Ejercicio2_Guia12;
 
+import Ejercicio2_Guia12_entidades.Electrodomestico;
 import Ejercicio2_Guia12_entidades.Lavadora;
 import Ejercicio2_Guia12_entidades.Televisor;
 
@@ -12,7 +13,7 @@ public class ElectrodomesticoMain {
         Lavadora l1 = new Lavadora (45, 100000,"negro",'Z',50);
         Lavadora l2 = new Lavadora (10, 100000,"negro",'A',70);
         
-        Televisor t1 = new Televisor(55,true,230000, "negro",'B',10);
+        Televisor t1 = new Televisor(55,true,230000, "violeta",'D',10);
         Televisor t2 = new Televisor(24,true,80000, "negro",'B',5);
         Televisor t3 = new Televisor(24,false,80000, "negro",'B',5);
         
@@ -20,6 +21,8 @@ public class ElectrodomesticoMain {
         System.out.println("Electrodomestico");
         System.out.println("----------------");
         System.out.println(l1.toString());
+        l1.comprobarConsumoEnergetico(l1.getConsumoEnergetico());
+        
         System.out.println("Precio Final: "+l1.precioFinal());
         System.out.println(amarillo+".......................");
         

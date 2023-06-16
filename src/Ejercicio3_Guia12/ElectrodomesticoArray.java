@@ -21,18 +21,20 @@ public class ElectrodomesticoArray {
    
     public static void main(String[] args) {
        
-    ArrayList<Electrodomestico> electros = new ArrayList();  
+        ArrayList<Electrodomestico> electros = new ArrayList();  
        
         Lavadora l3 = new Lavadora (45, 100000,"negro",'Z',50);
         Lavadora l4 = new Lavadora (10, 100000,"negro",'A',70);
         
-        Televisor t4 = new Televisor(55,true,230000, "negro",'B',10);
+        Televisor t4 = new Televisor(55,true,230000, "violeta",'B',10);
         Televisor t5 = new Televisor(24,true,80000, "negro",'B',5);
+        Televisor t6 = new Televisor(24,false,80000, "negro",'B',5);
     
         electros.add(l3);
         electros.add(l4);
         electros.add(t4);
         electros.add(t5);
+        electros.add(t6);
         
         double precioTotalElectro = 0;
         double precioTotalLava = 0;
@@ -48,7 +50,7 @@ public class ElectrodomesticoArray {
                 precioTotalTele += precioFinal;
             }
         }
-        System.out.println("Precio Total Electrodomésticos => " + precioTotalElectro);
+        System.out.println("Precio Total Electrodomesticos => " + precioTotalElectro);
         System.out.println("\nPrecio Total Lavadoras         => " + precioTotalLava);
         System.out.println("\nPrecio Total Televisores       => " + precioTotalTele);
         System.out.println("");
