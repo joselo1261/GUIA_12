@@ -45,19 +45,19 @@ public class Barcos_Main_JobOptions {
         switch (num) {
 
                 case 1:
-                    JOptionPane.showMessageDialog(null, barco.toString()+"\n> Precio final del alquiler: $  " + alq.calcularPrecioAlquiler(), "Informacion ", JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(null, barco.toString()+"\n> Precio Final Alquiler: $  " + alq.calcularPrecioAlquiler(), ">> Cotizacion <<", JOptionPane.INFORMATION_MESSAGE);
                     break;
                 case 2:
-                    JOptionPane.showMessageDialog(null, barcom.toString()+"\n> Precio final del alquiler: $  " + alq1.calcularPrecioAlquiler(), "Informacion ", JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(null, barcom.toString()+"\n> Precio Final Alquiler: $  " + alq1.calcularPrecioAlquiler(),">> Cotizacion <<", JOptionPane.INFORMATION_MESSAGE);
                     break;
                 case 3:
-                    JOptionPane.showMessageDialog(null, yate.toString()+"\n> Precio final del alquiler: $  " + alq2.calcularPrecioAlquiler(), "Informacion ", JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(null, yate.toString()+"\n> Precio Final Alquiler: $  " + alq2.calcularPrecioAlquiler(), ">> Cotizacion <<", JOptionPane.INFORMATION_MESSAGE);
                     break;
                 case 4:
-                    JOptionPane.showMessageDialog(null, velero.toString()+"\n> Precio final del alquiler: $  " + alq3.calcularPrecioAlquiler(), "Informacion ", JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(null, velero.toString()+"\n> Precio Final Alquiler: $  " + alq3.calcularPrecioAlquiler(), ">> Cotizacion <<", JOptionPane.INFORMATION_MESSAGE);
                     break;
                 case 5:
-                    JOptionPane.showMessageDialog(null, "Hasta Luego !! ", "Informacion ", JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Hasta Luego !! ", "Saliendo Menu", JOptionPane.INFORMATION_MESSAGE);
                     System.exit(0);
                 default:
                     JOptionPane.showMessageDialog(null, "Opcion Incorrecta. Vuelva a intentarlo !! ", "Error", JOptionPane.INFORMATION_MESSAGE);
