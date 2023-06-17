@@ -42,7 +42,7 @@ public class Barcos_Main {
         Velero velero = new Velero("V1234", 15.5, 2000, 3);
         BarcoMotor barcom = new BarcoMotor("Y1234", 25.5, 2010,500);
         Yate yate = new Yate("Z1234", 35.3, 2015, 500,5);
-        
+                    
              
         System.out.println("Alquiler Barco");
         System.out.println("--------------");

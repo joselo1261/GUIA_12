@@ -12,6 +12,12 @@ public class Velero extends Barco {
     }
     
     @Override
+    public String toString() {
+        return "> Matricula: " + matricula + "\n> Eslora: " + eslora + "\n> Año Fabricacion: " + anioFabricacion + "\n> Cantidad Mastiles: " + numMastiles;
+    }
+    
+    
+    @Override
     public double calcularModulo() {
         return super.calcularModulo()+eslora * 10;
     }

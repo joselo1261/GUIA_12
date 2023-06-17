@@ -11,6 +11,13 @@ public class BarcoMotor extends Barco{
         this.potenciaCV = potenciaCV;
     }
     
+    
+    @Override
+    public String toString() {
+        return "> Matricula: " + matricula + "\n> Eslora: " + eslora + "\n> Año Fabricacion: " + anioFabricacion + "\n> Potencia: " + potenciaCV +" CV";
+    }
+    
+    
     @Override
     public double calcularModulo() {
         return super.calcularModulo() + potenciaCV;

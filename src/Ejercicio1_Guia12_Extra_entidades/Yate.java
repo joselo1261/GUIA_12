@@ -14,6 +14,12 @@ public class Yate extends Barco {
     }
     
     @Override
+    public String toString() {
+        return "> Matricula: " + matricula + "\n> Eslora: " + eslora + "\n> Año Fabricacion: " + anioFabricacion + "\n> Potencia: " + potenciaCV +" CV" + "\n> Cantidad Camarotes: " + numCamarotes;
+    }
+    
+    
+    @Override
     public double calcularModulo() {
         return super.calcularModulo() + potenciaCV + numCamarotes;
     }

@@ -11,6 +11,13 @@ public class Barco {
         this.anioFabricacion = anioFabricacion;
     }
     
+    
+    @Override
+    public String toString() {
+        return "> Matricula: " + matricula + "\n> Eslora: " + eslora + "\n> Año Fabricacionn: " + anioFabricacion;
+    }
+    
+    
     public double calcularModulo() {
         return eslora * 10;
     }
