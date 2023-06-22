@@ -76,11 +76,5 @@ public class Barcos_Main {
         System.out.println(celeste+"Precio Alquiler: " + precioAlquiler);
         System.out.println("");
         
-
-        
-        
-        
-        
-        
-    }
+        }
 }

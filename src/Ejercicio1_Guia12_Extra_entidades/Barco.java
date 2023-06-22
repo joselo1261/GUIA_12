@@ -5,6 +5,10 @@ public class Barco {
     protected double eslora;
     protected int anioFabricacion;
 
+    public Barco(){
+        
+    }
+
     public Barco(String matricula, double eslora, int anioFabricacion) {
         this.matricula = matricula;
         this.eslora = eslora;

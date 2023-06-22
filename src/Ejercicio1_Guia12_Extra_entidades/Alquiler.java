@@ -24,6 +24,10 @@ public class Alquiler {
         this.posicionAmarre = posicionAmarre;
         this.barco = barco;
     }
+
+    public Alquiler(Barco barco) {
+        this.barco = barco;
+    }
     
     public double calcularPrecioAlquiler() {
         long diasOcupacion = ChronoUnit.DAYS.between(fechaAlquiler, fechaDevolucion);
