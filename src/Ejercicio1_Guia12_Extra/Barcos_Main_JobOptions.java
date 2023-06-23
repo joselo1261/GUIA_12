@@ -14,6 +14,9 @@ import javax.swing.UIManager;
 public class Barcos_Main_JobOptions {
 
     
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         Barco barco = new Barco("X1234", 20.2, 2001);
         Velero velero = new Velero("V1234", 15.5, 2000, 3);

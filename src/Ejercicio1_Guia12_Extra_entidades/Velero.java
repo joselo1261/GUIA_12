@@ -19,7 +19,7 @@ public class Velero extends Barco {
     
     @Override
     public double calcularModulo() {
-        return super.calcularModulo()+eslora * 10;
+        return super.calcularModulo()+ numMastiles* 10;
     }
     
         
