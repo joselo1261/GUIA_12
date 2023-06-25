@@ -13,8 +13,9 @@ public class Velero extends Barco {
     
     @Override
     public String toString() {
-        return "> Matricula: " + matricula + "\n> Eslora: " + eslora + "\n> Año Fabricacion: " + anioFabricacion + "\n> Cantidad Mastiles: " + numMastiles;
+        return super.toString()+"\nNumero Mastiles => "+numMastiles;
     }
+    
     
     
     @Override

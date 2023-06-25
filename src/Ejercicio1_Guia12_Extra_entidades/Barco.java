@@ -18,7 +18,7 @@ public class Barco {
     
     @Override
     public String toString() {
-        return "> Matricula: " + matricula + "\n> Eslora: " + eslora + "\n> Año Fabricacionn: " + anioFabricacion;
+        return "Matricula => " + matricula + "\nEslora => " + eslora + "\nAño Fabricacion => " + anioFabricacion;
     }
     
     

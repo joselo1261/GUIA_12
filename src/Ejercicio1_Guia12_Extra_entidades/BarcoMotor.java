@@ -14,7 +14,7 @@ public class BarcoMotor extends Barco{
     
     @Override
     public String toString() {
-        return "> Matricula: " + matricula + "\n> Eslora: " + eslora + "\n> Año Fabricacion: " + anioFabricacion + "\n> Potencia: " + potenciaCV +" CV";
+        return super.toString()+"\nPotencia => "+potenciaCV+" CV";
     }
     
     

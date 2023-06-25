@@ -44,36 +44,40 @@ public class Barcos_Main {
         Yate yate = new Yate("Z1234", 35.3, 2015, 500,5);
                     
              
-        System.out.println("\nAlquiler Barco");
-        System.out.println("--------------");
+        System.out.println(magenta+"\nAlquiler Barco");
+        System.out.println(magenta+"--------------");
         Alquiler alq = new Alquiler("Jose Gomez", "12345678", LocalDate.of(2023, 6, 15),
                 LocalDate.of(2023, 6, 20), 1, barco);
         double precioAlquiler = alq.calcularPrecioAlquiler();
+        System.out.println(alq.toString());
         System.out.println(magenta+"Precio Alquiler: " + precioAlquiler);
         System.out.println("");
         
-        System.out.println("Alquiler Velero");
-        System.out.println("---------------");
+        System.out.println(celeste+"\nAlquiler Velero");
+        System.out.println(celeste+"---------------");
         Alquiler alq1 = new Alquiler("Jose Garcia", "23456789", LocalDate.of(2023, 6, 16),
                 LocalDate.of(2023, 6, 24), 2, velero);
         precioAlquiler = alq1.calcularPrecioAlquiler();
-        System.out.println(verde+"Precio Alquiler: " + precioAlquiler);
+        System.out.println(alq1.toString());
+        System.out.println(celeste+"Precio Alquiler: " + precioAlquiler);
         System.out.println("");
         
-        System.out.println("Alquiler Barco Motor");
-        System.out.println("--------------------");
+        System.out.println(amarillo+"\nAlquiler Barco Motor");
+        System.out.println(amarillo+"--------------------");
         Alquiler alq2 = new Alquiler("Jose Guzman", "34567890", LocalDate.of(2023, 6, 16),
                 LocalDate.of(2023, 7, 30), 3, barcom);
         precioAlquiler = alq2.calcularPrecioAlquiler();
+        System.out.println(alq2.toString());
         System.out.println(amarillo+"Precio Alquiler: " + precioAlquiler);
         System.out.println("");
         
-        System.out.println("Alquiler Yate");
-        System.out.println("-------------");
+        System.out.println(verde+"\nAlquiler Yate");
+        System.out.println(verde+"-------------");
         Alquiler alq3 = new Alquiler("Jose Esteves", "45678901", LocalDate.of(2023, 6, 20),
                 LocalDate.of(2023, 7, 30), 4, yate);
         precioAlquiler = alq3.calcularPrecioAlquiler();
-        System.out.println(celeste+"Precio Alquiler: " + precioAlquiler);
+        System.out.println(alq3.toString());
+        System.out.println(verde+"Precio Alquiler: " + precioAlquiler);
         System.out.println("");
         
         }

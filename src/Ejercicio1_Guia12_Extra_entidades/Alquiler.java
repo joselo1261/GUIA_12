@@ -29,6 +29,15 @@ public class Alquiler {
         this.barco = barco;
     }
     
+    
+
+    @Override
+    public String toString() {
+        return "Nombre Cliente => " + nombreCliente + "\nDocumento Cliente => " + documentoCliente
+                + "\nFecha Alquiler => " + fechaAlquiler + "\nFecha Devolucion => " + fechaDevolucion + "\nPosicion Amarre => "
+                + posicionAmarre+"\nDatos del Barco: "+"\n==============="+"\n"+barco;
+    }
+
     public double calcularPrecioAlquiler() {
         long diasOcupacion = ChronoUnit.DAYS.between(fechaAlquiler, fechaDevolucion);
         double modulo = barco.calcularModulo();
