@@ -39,10 +39,11 @@ public class Lavadora extends Electrodomestico{
     // el atributo propio de la lavadora.
     
     public void crearLavadora(){
-        Scanner sc = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n");
-        crearElectrodomestico();
-        System.out.println("Ingrese carga de la lavadora: ");
-        carga=sc.nextInt();
+        try (Scanner sc = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n")) {
+            crearElectrodomestico();
+            System.out.println("Ingrese carga de la lavadora: ");
+            carga=sc.nextInt();
+        }
     }
     
     

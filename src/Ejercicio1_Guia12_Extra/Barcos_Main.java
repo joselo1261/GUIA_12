@@ -44,7 +44,7 @@ public class Barcos_Main {
         Yate yate = new Yate("Z1234", 35.3, 2015, 500,5);
                     
              
-        System.out.println("Alquiler Barco");
+        System.out.println("\nAlquiler Barco");
         System.out.println("--------------");
         Alquiler alq = new Alquiler("Jose Gomez", "12345678", LocalDate.of(2023, 6, 15),
                 LocalDate.of(2023, 6, 20), 1, barco);

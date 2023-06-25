@@ -33,7 +33,7 @@ public class EdificioMain {
 
    
     public static void main(String[] args) {
-        ArrayList<Edificio> edificios = new ArrayList();
+        ArrayList<Edificio> edificios = new ArrayList<>();
         
         Polideportivo poli1 = new Polideportivo("Polideportivo 1", "Techado",20, 8, 25);
         Polideportivo poli2 = new Polideportivo("Polideportivo 2", "Abierto",25, 8, 30);

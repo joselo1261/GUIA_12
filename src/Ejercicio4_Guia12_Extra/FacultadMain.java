@@ -2,7 +2,6 @@
 package Ejercicio4_Guia12_Extra;
 
 import Ejercicio4_Guia12_Extra_entidades.Estudiante;
-import Ejercicio4_Guia12_Extra_entidades.Persona;
 import Ejercicio4_Guia12_Extra_entidades.PersonalServicio;
 import Ejercicio4_Guia12_Extra_entidades.Profesor;
 
@@ -38,28 +37,26 @@ public class FacultadMain {
         String magenta = "\033[35m";
         String celeste = "\033[36m";
 
-        Estudiante estudiante = new Estudiante("Jose", "Perez", "123456", "Soltero", "Full Stack");
-        Profesor profesor = new Profesor("Emiliano", "Estevez", "654321", "Casado", 2020, "A04", "Informatica");
-        PersonalServicio personalServicio = new PersonalServicio("Lusiano", "Garcia", "66666", "Separado", 2010, "9B", "Mantenimiento");
-
         // Imprimir Original
+
+
         System.out.println(amarillo+"\nInformacion Estudiante:");
         System.out.println("-----------------------");
-        System.out.println(estudiante.toString());
+        System.out.println(new Estudiante("Jose", "Perez", "123456", "Soltero", "Full Stack").toString());
 
         System.out.println(magenta+"\nInformacion Profesor:");
         System.out.println("---------------------");
-        System.out.println(profesor.toString());
+        System.out.println(new Profesor("Emiliano", "Estevez", "654321", "Casado", 2020, "A04", "Informatica").toString());
 
         System.out.println(celeste+"\nInformacion Personal Servicio:");
         System.out.println("------------------------------");
-        System.out.println(personalServicio.toString());
+        System.out.println(new PersonalServicio("Lusiano", "Garcia", "66666", "Separado", 2010, "9B", "Mantenimiento").toString());
         System.out.println( );
 
         // Realizar cambios
-        estudiante.matricularEnCurso("UX");
-        profesor.cambiarDepartamento("Ciencias");
-        personalServicio.trasladarSeccion("Controller");
+        new Estudiante("Jose", "Perez", "123456", "Soltero", "Full Stack").matricularEnCurso("UX");
+        new Profesor("Emiliano", "Estevez", "654321", "Casado", 2020, "A04", "Informatica").cambiarDepartamento("Ciencias");
+        new PersonalServicio("Lusiano", "Garcia", "66666", "Separado", 2010, "9B", "Mantenimiento").trasladarSeccion("Controller");
 
         // Imprimir Cambiado
         String rojo = "\033[31m";
@@ -67,15 +64,15 @@ public class FacultadMain {
         System.out.println("******************");
         System.out.println(amarillo+"Informacion Estudiante:");
         System.out.println("-----------------------");
-        System.out.println(estudiante.toString());
+        System.out.println(new Estudiante("Jose", "Perez", "123456", "Soltero", "Full Stack").toString());
 
         System.out.println(magenta+"\nInformacion Profesor:");
         System.out.println("---------------------");
-        System.out.println(profesor.toString());
+        System.out.println(new Profesor("Emiliano", "Estevez", "654321", "Casado", 2020, "A04", "Informatica").toString());
 
         System.out.println(celeste+"\nInformacion Personal Servicio:");
         System.out.println("------------------------------");
-        System.out.println(personalServicio.toString());
+        System.out.println(new PersonalServicio("Lusiano", "Garcia", "66666", "Separado", 2010, "9B", "Mantenimiento").toString());
         System.out.println( );
     }
 }

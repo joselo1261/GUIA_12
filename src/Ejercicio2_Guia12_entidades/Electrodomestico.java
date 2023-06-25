@@ -110,17 +110,18 @@ public class Electrodomestico {
     // precio se le da un valor base de $1000.
     
     public void crearElectrodomestico() {
-        Scanner sc = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n");
-        System.out.println("Ingrese el precio: ");
-        precio = sc.nextDouble();
-        System.out.println("Ingrese el color: ");
-        color = sc.next();
-        color = comprobarColor(color);
-        System.out.println("Ingrese el consumo energetico: ");
-        consumoEnergetico = sc.next().charAt(0);
-        comprobarConsumoEnergetico(consumoEnergetico);
-        System.out.println("Ingrese el peso: ");
-        peso = sc.nextDouble();
+        try (Scanner sc = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n")) {
+            System.out.println("Ingrese el precio: ");
+            precio = sc.nextDouble();
+            System.out.println("Ingrese el color: ");
+            color = sc.next();
+            color = comprobarColor(color);
+            System.out.println("Ingrese el consumo energetico: ");
+            consumoEnergetico = sc.next().charAt(0);
+            comprobarConsumoEnergetico(consumoEnergetico);
+            System.out.println("Ingrese el peso: ");
+            peso = sc.nextDouble();
+        }
         System.out.println("Electrodomestico => " + "\nPrecio = " + precio + "\nColor = " + color + "\nConsumo Energetico = " + consumoEnergetico + "\nPeso=" + peso+"\n");
     }
     

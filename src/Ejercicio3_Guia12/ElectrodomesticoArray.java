@@ -21,7 +21,7 @@ public class ElectrodomesticoArray {
    
     public static void main(String[] args) {
        
-        ArrayList<Electrodomestico> electros = new ArrayList();  
+        ArrayList<Electrodomestico> electros = new ArrayList<>();  
        
         Lavadora l3 = new Lavadora (45, 100000,"negro",'Z',50);
         Lavadora l4 = new Lavadora (10, 100000,"negro",'A',70);

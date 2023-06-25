@@ -46,14 +46,15 @@ public class Televisor extends Electrodomestico {
     // los atributos del televisor.
     
     public void crearTelevisor() {
-        Scanner sc = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n");
-        crearElectrodomestico();
-        System.out.println("Ingrese resolucion en pulgadas: ");
-        resolucion = sc.nextInt();
-        System.out.println("El televisor cuenta con sintonizador TDT? (S/N)");
-        String resp = sc.next();
-        if (resp.equalsIgnoreCase("N")) {
-            sintonizador = false;
+        try (Scanner sc = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n")) {
+            crearElectrodomestico();
+            System.out.println("Ingrese resolucion en pulgadas: ");
+            resolucion = sc.nextInt();
+            System.out.println("El televisor cuenta con sintonizador TDT? (S/N)");
+            String resp = sc.next();
+            if (resp.equalsIgnoreCase("N")) {
+                sintonizador = false;
+            }
         }
 
     }
