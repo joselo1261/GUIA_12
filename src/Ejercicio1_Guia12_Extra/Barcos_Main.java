@@ -61,7 +61,7 @@ public class Barcos_Main {
         System.out.println(alq1.toString());
         System.out.println(celeste+"Precio Alquiler: " + precioAlquiler);
         System.out.println("");
-        
+             
         System.out.println(amarillo+"\nAlquiler Barco Motor");
         System.out.println(amarillo+"--------------------");
         Alquiler alq2 = new Alquiler("Jose Guzman", "34567890", LocalDate.of(2023, 6, 16),
@@ -80,5 +80,6 @@ public class Barcos_Main {
         System.out.println(verde+"Precio Alquiler: " + precioAlquiler);
         System.out.println("");
         
+
         }
 }
