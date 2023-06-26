@@ -38,7 +38,7 @@ public class Alquiler {
                 + posicionAmarre+"\nDatos del Barco: "+"\n==============="+"\n"+barco;
     }
 
-    public double calcularPrecioAlquiler() {
+        public double calcularPrecioAlquiler() {
         long diasOcupacion = ChronoUnit.DAYS.between(fechaAlquiler, fechaDevolucion);
         double modulo = barco.calcularModulo();
         return diasOcupacion * modulo;

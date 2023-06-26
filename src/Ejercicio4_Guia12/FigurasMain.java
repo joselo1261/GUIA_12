@@ -20,7 +20,7 @@ public class FigurasMain {
         double areaCirculo = circ.calcularArea();
         double perimetroCirculo = circ.calcularPerimetro();
 
-        System.out.println("Calculo de Figuras Geometricas");
+        System.out.println("\nCalculo de Figuras Geometricas");
         System.out.println("------------------------------");
         System.out.println("\nArea del circulo: " + df.format(areaCirculo));
         System.out.println("\nPerimetro del circulo: " + df.format(perimetroCirculo));
