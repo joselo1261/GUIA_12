@@ -1,0 +1,40 @@
+@startuml
+
+class Alojamiento{
+...
+}
+
+class AlojamientoExtraHotelero extends Alojamiento{
+...
+}
+class Camping extends AlojamientoExtraHotelero{
+...
+}
+
+class Residencia extends AlojamientoExtraHotelero{
+...   
+}
+
+class Hotel extends Alojamiento{
+...
+}
+
+class HotelCuatroEstrellas extends Hotel{
+...
+}
+
+class HotelCincoEstrellas extends Hotel{
+...    
+}
+
+Alojamiento <|-- Hotel
+Alojamiento <|-- AlojamientoExtraHotelero
+Hotel <|-- HotelCuatroEstrellas
+Hotel <|-- HotelCincoEstrellas
+AlojamientoExtraHotelero <|-- Camping
+AlojamientoExtraHotelero <|-- Residencia
+
+@enduml
+
+
+
