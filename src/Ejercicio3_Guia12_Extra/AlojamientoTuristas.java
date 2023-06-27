@@ -24,7 +24,7 @@ public class AlojamientoTuristas {
      * @param args
      */
     public static void main(String[] args) {
-        try (Scanner sc = new Scanner(System.in)) {
+            Scanner sc = new Scanner(System.in);
             ArrayList<Alojamiento> alojamientos = new ArrayList<>();
             alojamientos.add(new HotelCuatroEstrellas("Hotel A", "Calle 123", "Ciudad A", "Gerente A",
                     100, 200, 5, "A", "Restaurante A", 40));
